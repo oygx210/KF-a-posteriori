@@ -9,7 +9,7 @@ If you use these codes in your research, please, cite the corresponding articles
 # Steps to reproduce
 - `Test_KFs` is the script that performs Monte Carlo runs for solving filtering problem by various KF implementations. 
 - `Illustrate_XP` is the script that illustrates the obtained estimates and the diagonal entries of the error covariance matrix (over time). You can find its call at the end of the script above, which is commented. Just delete this comment sign.
-- `Simulate_Measurements` stands for simulating the state-space model and generating the measurementsfor the filtering methods.
+- `Simulate_Measurements` stands for simulating the state-space model and generating the measurements for the filtering methods.
 
 When the state is estimated, the resulted errors should be the same for all implementation methods because they are mathematically equivalent to each other. Their numerical properties differ, but the ill-conditioned test examples are not given here. 
 
