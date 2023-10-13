@@ -6,6 +6,9 @@ This repository contains MATLAB functions for various Kalman filter (KF) impleme
 Each code (implementation method) includes the exact reference where the particular algorithm was published. 
 If you use these codes in your research, please, cite the corresponding articles mentioned in the codes.  
 
+# Remark
+The codes have been presented here for their instructional value only. They have been tested with care but are not guaranteed to be free of error and, hence, they should not be relied on as the sole basis to solve problems. 
+
 # Steps to reproduce
 - `Test_KFs` is the script that performs Monte Carlo runs for solving filtering problem by various KF implementations.
 - `Test_LLF` is the script for calculating the negative log LF by various filtering algorithms. 
@@ -14,9 +17,6 @@ If you use these codes in your research, please, cite the corresponding articles
 - `Simulate_Measurements` stands for simulating the state-space model and generating the measurements for the filtering methods.
 
 When the state is estimated, the resulted errors should be the same for all implementation methods because they are mathematically equivalent to each other. Their numerical properties differ, but the ill-conditioned test examples are not given here. 
-
-# Remark
-The codes have been presented here for their instructional value only. They have been tested with care but are not guaranteed to be free of error and, hence, they should not be relied on as the sole basis to solve problems. 
 
 # List of the KF implementation methods
 
