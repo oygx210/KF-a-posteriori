@@ -10,6 +10,11 @@
 %   1. see Chapter 7 and Section 7.4.5 in 
 %      Grewal, M.S., Andrews, A.P. (2015) Kalman filtering: theory and practice using MATLAB 
 %      Prentice-Hall, New Jersey, 4th edn. 
+%  2. The calculation of the log LFis proved in:
+%     Kulikova M.V. (2003) 
+%     On effective computation of the logarithm of the likelihood ratio 
+%     function for Gaussian signals, Lecture Notes in Computer Science, 
+%     2658: 427-435 DOI: http://doi.org/10.1007/3-540-44862-4_45
 % ------------------------------------------------------------------- 
 % Input:
 %     matrices        - system matrices F,H,Q etc
