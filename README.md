@@ -27,12 +27,13 @@ Conventional algorithms:
  -  `@Riccati_KF_seq`      is the Sequential Kalman Filter (component-wise measurement update)
 
 Square-root algorithms by using Cholesky factorization:
+<p style="font-size:11px">
  -  `Riccati_KF_SRCF_QL`   is the Square-Root Covariance Filter with lower triangular factors by Park & Kailath (1995), <a href="http://doi.org/10.1109/9.384225">DOI</a> 
  -  `Riccati_KF_SRCF_QR`   is the Square-Root Covariance Filter with upper triangular factorsby Park & Kailath (1995), <a href="http://doi.org/10.1109/9.384225">DOI</a> 
  -  `Riccati_KF_SRCF_QR_seq` is the Sequential Square-Root Covariance Filter with upper triangular factors by Kulikova (2009), <a href="http://dx.doi.org/10.1134/S0005117909050129">DOI</a>  
  -  `Riccati_KF_eSRCF_QL`  is the Extended Square-Root Covariance Filter with lower triangular factors by Park & Kailath (1995), <a href="http://doi.org/10.1109/9.384225">DOI</a>  
  -  `Riccati_KF_eSRCF_QR`  is the Extended Square-Root Covariance Filter with upper triangular factors by Park & Kailath (1995), <a href="http://doi.org/10.1109/9.384225">DOI</a> 
-
+</p>
 Square-root algorithms by using singular value decomposition:
  -  `Riccati_KF_SVDSR`     is the SVD-vased Filter by L. Wang et.al. (1992), <a href="http://doi.org/10.1109/CDC.1992.371522">DOI</a>
  -  `Riccati_KF_SVD`       is the SVD-based Covariance Filter by Kulikova & Tsyganova (2017), <a href="http://doi.org/10.1049/iet-cta.2016.1282">DOI</a>
