@@ -34,6 +34,6 @@ Square-root algorithms by using Cholesky factorization:
  -  `Riccati_KF_eSRCF_QR`  is the Extended Square-Root Covariance Filter with upper triangular factors 
 
 Square-root algorithms by using singular value decomposition:
- -  `Riccati_KF_SVDSR`     is the SVD-vased Filter by L. Wang et.al. (1992)
- -  `Riccati_KF_SVD`       is the SVD-based Covariance Filter by Kulikova & Tsyganova (2017)
- -  `Riccati_KF_SVDe`      is the "economy size" SVD-based Covariance Filter by Kulikova et.al. (2021)
+ -  `Riccati_KF_SVDSR`     is the SVD-vased Filter by L. Wang et.al. (1992), <a href="http://doi.org/10.1109/CDC.1992.371522">DOI</a>
+ -  `Riccati_KF_SVD`       is the SVD-based Covariance Filter by Kulikova & Tsyganova (2017), <a href="http://doi.org/10.1049/iet-cta.2016.1282">DOI</a>
+ -  `Riccati_KF_SVDe`      is the "economy size" SVD-based Covariance Filter by Kulikova et.al. (2021), <a href="10.1016/j.cam.2019.112487">DOI</a>
