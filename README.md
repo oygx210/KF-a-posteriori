@@ -27,7 +27,6 @@ Conventional algorithms:
  -  `@Riccati_KF_seq`      is the Sequential Kalman Filter (component-wise measurement update)
 
 Square-root algorithms by using Cholesky factorization:
-<p style="font-size:9px"> hjkhhih </p>
  -  `Riccati_KF_SRCF_QL`   is the Square-Root Covariance Filter with lower triangular factors by Park & Kailath (1995), <a href="http://doi.org/10.1109/9.384225">DOI</a> 
  -  `Riccati_KF_SRCF_QR`   is the Square-Root Covariance Filter with upper triangular factorsby Park & Kailath (1995), <a href="http://doi.org/10.1109/9.384225">DOI</a> 
  -  `Riccati_KF_SRCF_QR_seq` is the Sequential Square-Root Covariance Filter with upper triangular factors by Kulikova (2009), <a href="http://dx.doi.org/10.1134/S0005117909050129">DOI</a>  
