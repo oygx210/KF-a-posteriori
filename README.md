@@ -21,10 +21,10 @@ When the state is estimated, the resulted errors should be the same for all impl
 # List of the KF implementation methods
 
 ### Conventional algorithms:
- -  `@Riccati_KF_standard` is the Conventional implementation by Kalman (1960)
- -  `@Riccati_KF_Joseph`   is the Conventional Joseph stabilized implementation by Bucy & Joseph (1968)
- -  `@Riccati_KF_Swerling` is the Conventional implementation based on Swerling's formula (1959)
- -  `@Riccati_KF_seq`      is the Sequential Kalman Filter (component-wise measurement update)
+ -  `Riccati_KF_standard` is the Conventional implementation by Kalman (1960)
+ -  `Riccati_KF_Joseph`   is the Conventional Joseph stabilized implementation by Bucy & Joseph (1968)
+ -  `Riccati_KF_Swerling` is the Conventional implementation based on Swerling's formula (1959)
+ -  `Riccati_KF_seq`      is the Sequential Kalman Filter (component-wise measurement update)
 
 ### Square-root algorithms 
 Cholesky factorization-based methods:
