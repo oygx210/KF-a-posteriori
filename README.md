@@ -19,12 +19,14 @@ The codes have been presented here for their instructional value only. They have
 When the state is estimated, the resulted errors should be the same for all implementation methods because they are mathematically equivalent to each other. Their numerical properties differ, but the ill-conditioned test examples are not given here. 
 
 # List of the KF implementation methods
+**Conventional algorithms:**
+| Function | Description |
+| ---: | :--- |
+| `Riccati_KF_standard` | Conventional implementation, original method[^1] |
+| `Riccati_KF_Joseph` | Conventional Joseph stabilized implementation[^2] |
+| `Riccati_KF_Swerling` | Conventional implementation based on Swerling's formula[^3] |
+| `Riccati_KF_seq`      | Sequential Kalman Filter (component-wise measurement update)[^4] |
 
-### Conventional algorithms:
- -  `Riccati_KF_standard` is the Conventional implementation by Kalman (1960)
- -  `Riccati_KF_Joseph`   is the Conventional Joseph stabilized implementation by Bucy & Joseph (1968)
- -  `Riccati_KF_Swerling` is the Conventional implementation based on Swerling's formula (1959)
- -  `Riccati_KF_seq`      is the Sequential Kalman Filter (component-wise measurement update)
 
 ### Square-root algorithms 
 Cholesky factorization-based methods:
@@ -38,3 +40,10 @@ Singular value decomposition (SVD) factorization-based methods:
  -  `Riccati_KF_SVDSR`     is the SVD-vased Filter by L. Wang et.al. (1992), <a href="http://doi.org/10.1109/CDC.1992.371522">DOI</a>
  -  `Riccati_KF_SVD`       is the SVD-based Covariance Filter by Kulikova & Tsyganova (2017), <a href="http://doi.org/10.1049/iet-cta.2016.1282">DOI</a>
  -  `Riccati_KF_SVDe`      is the "economy size" SVD-based Covariance Filter by Kulikova et.al. (2021), <a href="10.1016/j.cam.2019.112487">DOI</a>
+
+[^1]: Kalman, R.E. (1960) A new approach to linear filtering and prediction problems. Journal of basic Engineering. 1960 Mar, 82(1):35-45. <a href="https://doi.org/10.1115/1.3662552">DOI</a>
+[^2]: Bucy, R.S. and Joseph, P.D. Filtering for Stochastic Processes, with Applications to Guidance. New York, John Wiley & Sons, 1968.
+[^3]: Swerling, P. (1959) First order error propagation in a stagewise differential smoothing procedure for satellite observations, Journal of Astronautical Sciences, V.6, 46--52. 
+[^4]: Grewal, M.S. and Andrews, A.P. Kalman filtering: theory and practice using MATLAB. Prentice-Hall, New Jersey, 4th edn., 2015. 
+
+
