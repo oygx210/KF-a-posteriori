@@ -32,7 +32,7 @@ When the state is estimated, the resulted errors should be the same for all impl
 | ---: | :--- |
 | `Riccati_KF_SRCF_QL`   | Square-Root Covariance Filter (SRCF) with lower triangular factors[^5] |
 | `Riccati_KF_SRCF_QR`   | SRCF with upper triangular factors[^5] |
-| `Riccati_KF_SRCF_QR_seq` | Sequential SRCF with upper triangular factors by Kulikova (2009), <a href="http://dx.doi.org/10.1134/S0005117909050129">DOI</a>  |
+| `Riccati_KF_SRCF_QR_seq` | Sequential SRCF with upper triangular factors[^6] |
 | `Riccati_KF_eSRCF_QL`  | Extended SRCF with lower triangular factors[^5] |
 | `Riccati_KF_eSRCF_QR`  | Extended SRCF with upper triangular factors[^5] |
 | `Riccati_KF_SVDSR`     | is the SVD-vased Filter by L. Wang et.al. (1992), <a href="http://doi.org/10.1109/CDC.1992.371522">DOI</a> |
@@ -44,6 +44,7 @@ When the state is estimated, the resulted errors should be the same for all impl
 [^3]: Swerling, P. (1959) First order error propagation in a stagewise differential smoothing procedure for satellite observations, Journal of Astronautical Sciences, V.6, 46--52. 
 [^4]: Grewal, M.S. and Andrews, A.P. Kalman filtering: theory and practice using MATLAB. Prentice-Hall, New Jersey, 4th edn., 2015. 
 [^5]: Park, P. and Kailath, T. (1995) New square-root algorithms for Kalman filtering. IEEE Transactions on Automatic Control. 40(5):895-9.  <a href="http://doi.org/10.1109/9.384225">DOI</a> 
+[^6]: Kulikova, M.V. (2009) On scalarized calculation of the likelihood function in array square-root filtering algorithms. Automation and Remote Control. 70:855-71. <a href="http://dx.doi.org/10.1134/S0005117909050129">DOI</a>, <a href="https://link.springer.com/content/pdf/10.1134/S0005117909050129.pdf">PDF on Springer</a>  
 
 
 
