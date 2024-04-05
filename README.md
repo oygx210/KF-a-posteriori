@@ -1,15 +1,15 @@
-# Discrete-time Kalman filter implementation methods
+## Discrete-time Kalman filter implementation methods
  
 This repository contains MATLAB functions for various Kalman filter (KF) implementation methods. They are given in a posteriori form, i.e., no data are assumed to be known at the initial step and, hence, the time update comes first. 
 
-# References
+**References**
 Each code (implementation method) includes the exact reference where the particular algorithm was published. 
 If you use these codes in your research, please, cite the corresponding articles mentioned in the codes.  
 
-# Remark
+**Remark**
 The codes have been presented here for their instructional value only. They have been tested with care but are not guaranteed to be free of error and, hence, they should not be relied on as the sole basis to solve problems. 
 
-# Steps to reproduce
+### Steps to reproduce
 - `Test_KFs` is the script that performs Monte Carlo runs for solving filtering problem by various KF implementations.
 - `Test_LLF` is the script for calculating the negative log LF by various filtering algorithms. 
 - `Illustrate_XP` is the script that illustrates the obtained estimates and the diagonal entries of the error covariance matrix (over time). You can find its call at the end of the script above, which is commented. Just delete this comment sign.
@@ -18,7 +18,7 @@ The codes have been presented here for their instructional value only. They have
 
 When the state is estimated, the resulted errors should be the same for all implementation methods because they are mathematically equivalent to each other. Their numerical properties differ, but the ill-conditioned test examples are not given here. 
 
-# List of the KF implementation methods
+### List of the KF implementation methods
 **Conventional algorithms:**
 | Function | Description |
 | ---: | :--- |
