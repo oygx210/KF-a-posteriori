@@ -2,11 +2,11 @@
  
 This repository contains MATLAB functions for various Kalman filter (KF) implementation methods. They are given in a posteriori form, i.e., no data are assumed to be known at the initial step and, hence, the time update comes first. 
 
-**References**
+#### References
 Each code (implementation method) includes the exact reference where the particular algorithm was published. 
 If you use these codes in your research, please, cite the corresponding articles mentioned in the codes.  
 
-**Remark**
+#### Remark
 The codes have been presented here for their instructional value only. They have been tested with care but are not guaranteed to be free of error and, hence, they should not be relied on as the sole basis to solve problems. 
 
 ### Steps to reproduce
