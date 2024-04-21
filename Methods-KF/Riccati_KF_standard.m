@@ -63,7 +63,7 @@ function [X,P,residual,cov_residual] = kf_update(X,P,z,H,R)
 
   residual     = z - H*X;                 % residual
   cov_residual = R + H*P*H';              % residual covariance 
-  Kalman_gain  = P*H'*inv(cov_residual);  % Filter gain
+  Kalman_gain  = P*H'/cov_residual;       % Filter gain
 
   X = X + Kalman_gain*residual;           % Filtered state estimate
   P = P - Kalman_gain*H*P;                % Filtered error covariance
