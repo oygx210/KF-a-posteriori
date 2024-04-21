@@ -39,6 +39,7 @@ When the state is estimated, the resulted errors should be the same for all impl
 | `Riccati_KF_SVD`       | SVD covariance filter[^8]  |
 | `Riccati_KF_SVDe`      | "economy size" SVD covariance filter[^9] |
 | `Riccati_KF_VLambda1`      | SVD mixed-type filter with a posteriori gain calculation[^10] |
+| `Riccati_KF_VLambda2`      | SVD mixed-type filter with a priori gain calculation[^10] |
 
 [^1]: Kalman, R.E. (1960) A new approach to linear filtering and prediction problems. Journal of basic Engineering. 1960 Mar, 82(1):35-45. <a href="https://doi.org/10.1115/1.3662552">DOI</a>
 [^2]: Bucy, R.S. and Joseph, P.D. Filtering for Stochastic Processes, with Applications to Guidance. New York, John Wiley & Sons, 1968.
