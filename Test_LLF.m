@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------- 
 % Script for comparing various KF implementation methods and log LF evaluation.
-% Authors: Maria Kulikova:  kulikova dot maria at yahoo dot com     
+% Authors: Maria Kulikova  
 % ------------------------------------------------------------------- 
 
 clear all; close all; clc; warning off;
@@ -34,6 +34,9 @@ p = pwd; cd('Methods-KF');
      handle_funs{10} = @Riccati_KF_SVDSR;        % SVD-vased Filter by L. Wang et.al. (1992)
      handle_funs{11} = @Riccati_KF_SVD;          % SVD-vased Covariance Filter by Kulikova & Tsyganova (2017)
      handle_funs{12} = @Riccati_KF_SVDe;         % "economy size" SVD-based Covariance Filter by Kulikova et.al. (2021)
+     handle_funs{13} = @Riccati_KF_VLambda1;     % V-Lambda filter (mixed-type SVD) by Oshman & Bar-Itzhack (1986)
+     handle_funs{14} = @Riccati_KF_VLambda2;     % V-Lambda filter (mixed-type SVD) by Oshman & Bar-Itzhack (1986)
+
    % you can add any other method in the same way;  
 cd(p); 
 
