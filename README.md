@@ -38,6 +38,7 @@ When the state is estimated, the resulted errors should be the same for all impl
 | `Riccati_KF_SVDSR`     | SVD mixed-type filter[^7] |
 | `Riccati_KF_SVD`       | SVD covariance filter[^8]  |
 | `Riccati_KF_SVDe`      | "economy size" SVD covariance filter[^9] |
+| `Riccati_KF_VLambda1`      | SVD mixed-type filter with a posteriori gain calculation[^10] |
 
 [^1]: Kalman, R.E. (1960) A new approach to linear filtering and prediction problems. Journal of basic Engineering. 1960 Mar, 82(1):35-45. <a href="https://doi.org/10.1115/1.3662552">DOI</a>
 [^2]: Bucy, R.S. and Joseph, P.D. Filtering for Stochastic Processes, with Applications to Guidance. New York, John Wiley & Sons, 1968.
@@ -48,6 +49,7 @@ When the state is estimated, the resulted errors should be the same for all impl
 [^7]: Wang, L. and Libert, G. and Manneback, P. (1992) Kalman filter algorithm based on singular value decomposition. Proceedings of the 31st IEEE Conference on Decision and Control 1992 Dec 16, pp. 1224-1229.  <a href="http://doi.org/10.1109/CDC.1992.371522">DOI</a> 
 [^8]: Kulikova, M.V. and Tsyganova, J.V. (2017) Improved discrete‐time Kalman filtering within singular value decomposition. IET Control Theory & Applications. 11(15):2412-8. <a href="http://doi.org/10.1049/iet-cta.2016.1282">DOI</a>, <a href="https://arxiv.org/abs/1611.03686">PDF on ArXiv</a>  
 [^9]: Kulikova, M.V. and Tsyganova, J.V. and Kulikov, G.Yu. (2021) SVD-based state and parameter estimation approach for generalized Kalman filtering with application to GARCH-in-Mean estimation. Journal of Computational and Applied Mathematics. 387:112487. <a href="10.1016/j.cam.2019.112487">DOI</a>
+[^10]: Oshman, Y. and Bar-Itzhack, I.Y. (1986) Square root filtering via covariance and information eigenfactors. Automatica, 22(5):599-604.  <a href="https://doi.org/10.1016/0005-1098(86)90070-1">DOI</a>
 
 
 
