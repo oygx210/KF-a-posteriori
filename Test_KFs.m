@@ -1,14 +1,14 @@
 % ------------------------------------------------------------------- 
 % Script for comparing various KF implementation methods.
-% Authors: Maria Kulikova:  kulikova dot maria at yahoo dot com     
+% Authors: Maria Kulikova     
 % ------------------------------------------------------------------- 
 
 clear all; close all; clc; warning off;
 
 % ---- Parameters that you may change ------
 MC_runs  = 10;                 % Number of Monte Carlo runs
-Delta    = 2;                  % Sampling interval Delta = t_{k}-t_{k-1}
-N_total  = 200;                % Discrete-time instances
+Delta    = 1;                  % Sampling interval Delta = t_{k}-t_{k-1}
+N_total  = 100;                % Discrete-time instances
 noise_type = @noise_gauss;     % Type of uncertainties 
 
 % ----Load  Model to be examined ----
@@ -29,9 +29,10 @@ p = pwd; cd('Methods-KF');
      handle_funs{9} = @Riccati_KF_SRCF_QR_seq;  % Sequential Square-Root Covariance Filter, upper triangular factors,
 
    % ----- SVD-based methods ------------------------
-     handle_funs{10} = @Riccati_KF_SVDSR;         % SVD-vased Filter by L. Wang et.al. (1992)
+     handle_funs{10} = @Riccati_KF_SVDSR;        % SVD-vased Filter by L. Wang et.al. (1992)
      handle_funs{11} = @Riccati_KF_SVD;          % SVD-vased Covariance Filter by Kulikova & Tsyganova (2017)
      handle_funs{12} = @Riccati_KF_SVDe;         % "economy size" SVD-based Covariance Filter by Kulikova et.al. (2021)
+     handle_funs{13} = @Riccati_KF_VLambda1;     % V-Lambda filter (mixed-type SVD) by Oshman & Bar-Itzhack (1986)
    % you can add any other method in the same way;  
 cd(p); 
 
